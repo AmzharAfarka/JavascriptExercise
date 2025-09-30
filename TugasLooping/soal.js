@@ -99,9 +99,9 @@ for (let i = 1; i <= 5; i++) {
 
 // soal 12
 console.log("Soal 12")
-for (let i = 5; i >= 1; i--) {
+for (let i = 1; i <= 5; i++) {
   let baris = "";
-  for (let j = 1; j <= i; j++) {
+  for (let j = 5; j >= i; j--) {
     baris += "*";
   }
   console.log(baris);
@@ -116,9 +116,9 @@ for (let i = 1; i <= 5; i++) {
   }
   console.log(baris);
 }
-for (let i = 4; i >= 1; i--) {
+for (let i = 1; i <= 4; i++) {
   let baris = "";
-  for (let j = 1; j <= i; j++) {
+  for (let j = 4; j >= i; j--) {
     baris += "*";
   }
   console.log(baris);
@@ -134,9 +134,9 @@ for (let i = 1; i <= 4; i++) {
   console.log(baris);
 }
 console.log("*******");
-for (let i = 4; i >= 1; i--) {
+for (let i = 1; i <= 4; i++) {
   let baris = "";
-  for (let j = 1; j <= i; j++) {
+  for (let j = 4; j >= i; j--) {
     baris += "*";
   }
   console.log(baris);
@@ -144,29 +144,57 @@ for (let i = 4; i >= 1; i--) {
 
 // soal 15 
 console.log("Soal 15")
-for (let i = 1; i <= 5; i++) {
-  let baris = "";
-  for (let j = 1; j <= i; j++) {
-    baris += "*";
-  }
-  console.log(baris);
+  for (let i = 1; i <= 5; i++) {
+    let baris = ""; 
+
+    
+    for (let j = 5; j > i; j--) {
+        baris += " ";
+    }
+
+    
+    for (let k = 1; k <= (2 * i - 1); k++) {
+        baris += "*";
+    }
+
+    console.log(baris);
 }
+
 
 // soal 16
 console.log("Soal 16")
+// Segitiga atas
 for (let i = 1; i <= 5; i++) {
-  let baris = "";
-  for (let j = 1; j <= i; j++) {
-    baris += "*";
-  }
-  console.log(baris);
+    let baris = "";
+
+
+    for (let j = 5; j > i; j--) {
+        baris += " ";
+    }
+
+    
+    for (let k = 1; k <= (2 * i - 1); k++) {
+        baris += "*";
+    }
+
+    console.log(baris);
 }
-for (let i = 4; i >= 1; i--) {
-  let baris = "";
-  for (let j = 1; j <= i; j++) {
-    baris += "*";
-  }
-  console.log(baris);
+
+// Segitiga bawah
+for (let i = 5 - 1; i >= 1; i--) {
+    let baris = "";
+
+    // spasi
+    for (let j = 5; j > i; j--) {
+        baris += " ";
+    }
+
+    // bintang
+    for (let k = 1; k <= (2 * i - 1); k++) {
+        baris += "*";
+    }
+
+    console.log(baris);
 }
 
 // soal 17
