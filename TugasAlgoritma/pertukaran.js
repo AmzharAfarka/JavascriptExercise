@@ -23,3 +23,12 @@ y = x ^ y
 x = x ^ y
 
 console.log(`nilai setelah pertukaran tanpa variabel ketiga (xor): x = ${x}, y = ${y}`)
+
+// pertukaran 3 variabel
+
+let temp = x;
+x = y;        
+y = z;        
+z = temp;     
+
+console.log(`x = ${x}, y = ${y}, z = ${z}`);
