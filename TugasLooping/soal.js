@@ -199,15 +199,15 @@ for (let i = 5 - 1; i >= 1; i--) {
 
 // soal 17
 console.log("Soal 17")
-let huruf = ["a","b","c","d","e"];
+
+let huruf = ["a", "b", "c", "d", "e"];
+
 for (let h = 0; h < huruf.length; h++) {
-  for (let i = 0; i < 5; i++) {
     let baris = "";
     for (let j = 0; j < 5; j++) {
-      baris += huruf[h] + (j < 4 ? " " : "");
+        baris += huruf[h] + (j < 4 ? " " : ""); 
     }
     console.log(baris);
-  }
 }
 
 
