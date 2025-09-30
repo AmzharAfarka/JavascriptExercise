@@ -89,7 +89,7 @@ for (let i = 0; i < 5; i++) {
 
 // soal 11
 console.log("Soal 11")
-for (let i = 5; i >= 1; i--) {
+for (let i = 1; i <= 5; i++) {
   let baris = "";
   for (let j = 1; j <= i; j++) {
     baris += "*";
