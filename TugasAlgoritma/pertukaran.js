@@ -8,3 +8,18 @@ x = y
 y = z
 
 console.log(`nilai setelah pertukaran: x = ${x}, y = ${y}`)
+
+// tanpa variabel ketiga
+x = x + y
+y = x - y
+x = x - y
+
+console.log(`nilai setelah pertukaran tanpa variabel ketiga: x = ${x}, y = ${y}`)
+
+// tanpa variabel ketiga (xor)
+
+x = x ^ y
+y = x ^ y
+x = x ^ y
+
+console.log(`nilai setelah pertukaran tanpa variabel ketiga (xor): x = ${x}, y = ${y}`)
