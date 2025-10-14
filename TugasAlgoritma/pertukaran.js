@@ -1,7 +1,7 @@
 const prompt = require('prompt-sync')({sigint : true});
 
-let x = Number(prompt('input angka1:'))
-let y = Number(prompt('input angka2:'))
+let x = Number(prompt('input nilai X:'))
+let y = Number(prompt('input nilai Y:'))
 
 let z = x
 x = y
@@ -31,4 +31,4 @@ x = y;
 y = z;        
 z = temp;     
 
-console.log(`x = ${x}, y = ${y}, z = ${z}`);
+console.log(`nilai setelah pertukaran 3 variable: x = ${x}, y = ${y}, z = ${z}`);
