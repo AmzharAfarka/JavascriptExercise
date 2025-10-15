@@ -142,6 +142,21 @@ if (angka2 % 4 == 0){
 }
     
 //diskon jika total belanjanya lebih dari 100ribu
+let totalBelanja = parseInt(prompt("Masukkan total belanja Anda: "));
+let diskon = 0;
+let totalSetelahDiskon = totalBelanja;
+
+if (totalBelanja > 100000) {
+    diskon = totalBelanja * 0.10;
+    totalSetelahDiskon = totalBelanja - diskon;
+    console.log(`Selamat! Anda mendapat diskon 10%.`);
+} else {
+    console.log(`Maaf, Anda tidak mendapat diskon.`);
+}
+
+console.log(`Diskon: Rp${diskon}`);
+console.log(`Total yang harus dibayar: Rp${totalSetelahDiskon}`);
+
 
 
 
