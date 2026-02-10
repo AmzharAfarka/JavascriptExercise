@@ -209,5 +209,5 @@ for (let h = 0; h < huruf.length; h++) {
     }
     console.log(baris);
 }
-
+//DONE
 
